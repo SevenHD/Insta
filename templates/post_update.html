@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Edit Post</h1>
+
+<form action = "" method = "post" enctype = "multipart/form-data"><!--多媒体加密 encode -->
+	{% csrf_token %}<!-- 防止攻击 -->
+	{{ form.as_p }}<!-- as_p display as paragragh , form  从view种传递进来-->
+	<button type = "submit" > Update </button>
+</form>
+
+{% endblock content%}

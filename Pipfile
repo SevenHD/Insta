@@ -7,6 +7,9 @@ verify_ssl = true
 
 [packages]
 django = "==3.0.2"
+django-imagekit = "*"
+pillow = "*"
+django-annoying = "*"
 
 [requires]
 python_version = "3.8"

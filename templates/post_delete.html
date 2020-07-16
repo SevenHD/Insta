@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Delete Post</h1>
+
+<form method = "post"><!--多媒体加密 encode -->
+	{% csrf_token %}
+	<button type = "submit" > Delete </button>
+</form>
+
+{% endblock content%}
