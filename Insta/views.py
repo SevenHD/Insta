@@ -9,9 +9,6 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from Insta.forms import CustomUserCreationForm
 from django.contrib.auth.decorators import login_required
 
-@login_required(redirect_field_name='login')
-def my_view(request):
-	...
 
 class HelloWorld(TemplateView):
 	template_name = 'test.html'
